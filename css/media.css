@@ -1,0 +1,933 @@
+/* ============= Xtra Small Devices Media Start ============== */
+
+@media(max-width: 575.98px) {
+
+    .social {
+        display: none;
+    }
+
+    .navbar {
+        padding: 20px 10px;
+        z-index: 999999;
+        top: 76px;
+        text-align: center;
+    }
+
+    .sticky.navbar {
+        top: 0px;
+    }
+
+    .navbar-brand img {
+        width: 80px;
+        top: -38px;
+        left: 0;
+    }
+
+    .sticky.navbar .navbar-brand img {
+        width: 80px;
+        position: absolute;
+        top: -28px;
+        left: 0;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: #003473;
+        font-size: 22px;
+        border: 2px solid #003473;
+    }
+
+    .navbar-nav {
+        padding-top: 30px;
+    }
+
+    .navbar-nav li ul {
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 0px 7px 0px #ddd;
+    }
+
+    .navbar-nav li ul li a {
+        padding-left: 0;
+    }
+
+    .navbar-nav li {
+        position: relative;
+        padding: 7px 0;
+    }
+
+    .sticky.navbar .navbar-nav li {
+        position: relative;
+        padding: 7px 0;
+    }
+
+    .navbar-nav li ul li {
+        padding: 10px 0;
+    }
+
+    .search-bar {
+        margin: 5px 30px;
+    }
+
+    #banner {
+        padding-top: 165px;
+        padding-bottom: 80px;
+    }
+
+    .boverlay-text h2 {
+        font-size: 32px;
+    }
+
+    .boverlay-text a {
+        font-size: 16px;
+        padding: 7px 17px;
+    }
+
+    .left,
+    .right {
+        font-size: 13px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #banner .slick-dots {
+        bottom: 0px;
+    }
+
+    #thin-slider {
+        padding-bottom: 10px;
+    }
+
+    .thin-left-one ul li:first-child {
+        font-size: 14px;
+        margin-right: 0
+    }
+
+    .thin-left-one ul li:first-child::before {
+        display: none;
+    }
+
+    .thin-left-one ul li {
+        font-size: 14px;
+    }
+
+    .thin-left-one p {
+        font-size: 14px;
+    }
+
+    .thin-left-two span {
+        font-size: 14px;
+    }
+
+    .thin-left-one::before {
+        height: 87%;
+    }
+
+    .thin-middle {
+        margin: 10px 0;
+    }
+
+    .timer {
+        display: flex;
+        padding: 0 50px;
+        padding-top: 10px;
+    }
+
+    .thin-right span {
+        font-size: 14px;
+    }
+
+    .left2,
+    .right2 {
+        display: none;
+    }
+
+    .time {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .social li a {
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
+    }
+
+    #jarkalender {
+        padding: 60px 0;
+        padding-bottom: 30px;
+    }
+
+    #jarkalender h2 {
+        font-size: 35px;
+    }
+
+    .jarkalender-item {
+        margin-bottom: 30px;
+    }
+
+    #brand {
+        padding: 70px 0;
+    }
+
+    #brand h2 {
+        font-size: 35px;
+        padding-bottom: 30px;
+    }
+
+    .left3, .right3 {
+        display: none !important;
+    }
+
+    .footer-logo {
+        border-left: 0;
+        padding-left: 0;
+    }
+
+    .footer-middle {
+        margin: 50px 0;
+    }
+
+    .footer-right {
+        padding-bottom: 40px;
+    }
+
+    .footer-right h5 {
+        position: relative;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #blog h2 {
+        font-size: 30px;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .sidebar h2 {
+        font-size: 32px !important;
+    }
+
+    .left-sidebar-inner ul li a {
+        font-family: ork-regular;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .left-sidebar-inner ul {
+        margin-bottom: 20px;
+    }
+
+    #team #blog h2 {
+        padding-top: 20px;
+    }
+
+    .mb-30 {
+        margin-bottom: 0 !important;
+    }
+
+    .team-item h3 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .blog-details h4 {
+        font-size: 22px;
+    }
+
+    .blog-details p {
+        padding-top: 0px;
+    }
+
+    .blog-bottom {
+        padding: 15px;
+    }
+
+    .blog-bottom p {
+        font-size: 14px;
+        padding-top: 5px !important;
+    }
+
+    .sponsor-tag li {
+        border-right: 0;
+    }
+
+    #blog .search-bar {
+        margin: 0;
+    }
+
+    .sponsor h3 {
+        padding-top: 30px;
+    }
+
+    .blog-list p {
+        padding-bottom: 15px;
+    }
+
+    .person-info {
+        padding-bottom: 27px;
+    }
+
+    .person-info h3 {
+        padding-top: 30px;
+    }
+
+    .person-info ul {
+        padding-bottom: 15px;
+    }
+
+    .tags li {
+        font-size: 14px;
+        padding: 5px 15px;
+        margin-bottom: 15px;
+    }
+
+    .blog-list h6 {
+        padding-top: 20px;
+    }
+
+    #nieuws-details .blog-details p {
+        padding-top: 10px;
+    }
+
+    @media(min-width: 506px) and (max-width: 575.98px) {
+
+        .navbar {
+            top: 55px;
+        }
+
+    }
+
+}
+
+/* ============= Xtra Small Devices Media End ============== */
+
+/* ============= Small Devices Media Start ============== */
+
+@media(min-width: 576px) and (max-width: 767.98px) {
+
+    .social {
+        display: none;
+    }
+
+    .container {
+        max-width: 576px;
+    }
+
+    .navbar {
+        padding: 20px 10px;
+        z-index: 999999;
+        top: 55px;
+        text-align: center;
+    }
+
+    .sticky.navbar {
+        top: 0;
+    }
+
+    .navbar-brand img {
+        width: 80px;
+        top: -38px;
+        left: 0;
+    }
+
+    .sticky.navbar .navbar-brand img {
+        width: 80px;
+        position: absolute;
+        top: -28px;
+        left: 0;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: #003473;
+        font-size: 22px;
+        border: 2px solid #003473;
+    }
+
+    .navbar-nav {
+        padding-top: 30px;
+    }
+
+    .navbar-nav li ul {
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 0px 7px 0px #ddd;
+    }
+
+    .navbar-nav li ul li a {
+        padding-left: 0;
+    }
+
+    .navbar-nav li {
+        position: relative;
+        padding: 7px 0;
+    }
+
+    .sticky.navbar .navbar-nav li {
+        position: relative;
+        padding: 7px 0;
+    }
+
+    .navbar-nav li ul li {
+        padding: 10px 0;
+    }
+
+    .search-bar {
+        margin: 5px 30px;
+    }
+
+    #banner {
+        padding-top: 165px;
+        padding-bottom: 80px;
+    }
+
+    .boverlay-text h2 {
+        font-size: 32px;
+    }
+
+    .boverlay-text a {
+        font-size: 16px;
+        padding: 7px 17px;
+    }
+
+    .left,
+    .right {
+        font-size: 13px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #banner .slick-dots {
+        bottom: 0px;
+    }
+
+    #thin-slider {
+        padding-bottom: 10px;
+    }
+
+    .thin-left-one ul li:first-child {
+        font-size: 14px;
+        margin-right: 0
+    }
+
+    .thin-left-one ul li:first-child::before {
+        display: none;
+    }
+
+    .thin-left-one ul li {
+        font-size: 14px;
+    }
+
+    .thin-left-one p {
+        font-size: 14px;
+    }
+
+    .thin-left-two span {
+        font-size: 14px;
+    }
+
+    .thin-left-one::before {
+        height: 87%;
+    }
+
+    .thin-middle {
+        margin: 10px 0;
+    }
+
+    .timer {
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .thin-right span {
+        font-size: 14px;
+    }
+
+    .left2,
+    .right2 {
+        display: none;
+    }
+
+    .px-sm-50 {
+        padding-left: 50px;
+        padding-right: 50px;
+        box-sizing: border-box;
+    }
+
+    .social li a {
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
+    }
+
+    #jarkalender {
+        padding: 60px 0;
+        padding-bottom: 30px;
+    }
+
+    #jarkalender h2 {
+        font-size: 35px;
+    }
+
+    .jarkalender-item {
+        margin-bottom: 30px;
+    }
+
+    #brand {
+        padding: 70px 0;
+    }
+
+    #brand h2 {
+        font-size: 35px;
+        padding-bottom: 30px;
+    }
+
+    .left3, .right3 {
+        display: none !important;
+    }
+
+    .footer-logo {
+        border-left: 0;
+        padding-left: 0;
+    }
+
+    .footer-middle {
+        margin: 50px 0;
+    }
+
+    .footer-right {
+        padding-bottom: 40px;
+    }
+
+    .footer-right h5 {
+        position: relative;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #blog h2 {
+        font-size: 30px;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .sidebar h2 {
+        font-size: 32px !important;
+    }
+
+    .left-sidebar-inner ul li a {
+        font-family: ork-regular;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .left-sidebar-inner ul {
+        margin-bottom: 20px;
+    }
+
+    #team #blog h2 {
+        padding-top: 20px;
+    }
+
+    .mb-30 {
+        margin-bottom: 0 !important;
+    }
+
+    .team-item h3 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .blog-details h4 {
+        font-size: 22px;
+    }
+
+    .blog-details p {
+        padding-top: 0px;
+    }
+
+    .blog-bottom {
+        padding: 15px;
+    }
+
+    .blog-bottom p {
+        font-size: 14px;
+        padding-top: 5px !important;
+    }
+
+    .sponsor-tag li {
+        border-right: 0;
+    }
+
+    #blog .search-bar {
+        margin: 0;
+    }
+
+    .sponsor h3 {
+        padding-top: 30px;
+    }
+
+    .blog-list p {
+        padding-bottom: 15px;
+    }
+
+    .person-info {
+        padding-bottom: 27px;
+    }
+
+    .person-info h3 {
+        padding-top: 30px;
+    }
+
+    .person-info ul {
+        padding-bottom: 15px;
+    }
+
+    .tags li {
+        font-size: 14px;
+        padding: 5px 15px;
+        margin-bottom: 15px;
+    }
+
+    .blog-list h6 {
+        padding-top: 20px;
+    }
+
+    #nieuws-details .blog-details p {
+        padding-top: 10px;
+    }
+
+}
+
+/* ============= Small Devices Media End ============== */
+
+/* ============= Medium Devices Media Start ============== */
+
+@media(min-width: 768px) and (max-width: 991.98px) {
+
+    .container {
+        max-width: 768px;
+    }
+
+    .navbar {
+        padding: 20px 10px;
+        z-index: 999999;
+        top: 55px;
+        text-align: center;
+    }
+
+    .sticky.navbar {
+        top: 0;
+    }
+
+    .navbar-brand img {
+        width: 80px;
+        top: -38px;
+        left: 0;
+    }
+
+    .sticky.navbar .navbar-brand img {
+        width: 80px;
+        position: absolute;
+        top: -28px;
+        left: 0;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: #003473;
+        font-size: 22px;
+        border: 2px solid #003473;
+    }
+
+    .navbar-nav {
+        padding-top: 30px;
+    }
+
+    .navbar-nav li ul {
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 0px 7px 0px #ddd;
+    }
+
+    .navbar-nav li ul li a {
+        padding-left: 0;
+    }
+
+    .navbar-nav li {
+        position: relative;
+        padding: 7px 0;
+    }
+
+    .sticky.navbar .navbar-nav li {
+        position: relative;
+        padding: 7px 0;
+    }
+
+    .navbar-nav li ul li {
+        padding: 10px 0;
+    }
+
+    .search-bar {
+        margin: 5px 30px;
+    }
+
+    #banner {
+        padding-top: 165px;
+        padding-bottom: 80px;
+    }
+
+    .boverlay-text h2 {
+        font-size: 32px;
+    }
+
+    .boverlay-text a {
+        font-size: 16px;
+        padding: 7px 17px;
+    }
+
+    .left,
+    .right {
+        font-size: 13px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #banner .slick-dots {
+        bottom: 0px;
+    }
+
+    #thin-slider {
+        padding-bottom: 10px;
+    }
+
+    .thin-left-one ul li:first-child {
+        font-size: 14px;
+        margin-right: 0
+    }
+
+    .thin-left-one ul li:first-child::before {
+        display: none;
+    }
+
+    .thin-left-one ul li {
+        font-size: 14px;
+    }
+
+    .thin-left-one p {
+        font-size: 14px;
+    }
+
+    .thin-left-two span {
+        font-size: 14px;
+    }
+
+    .thin-left-one::before {
+        height: 87%;
+    }
+
+    .thin-middle {
+        margin: 10px 0;
+    }
+
+    .timer {
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .thin-right span {
+        font-size: 14px;
+    }
+
+    .left2,
+    .right2 {
+        display: none;
+    }
+
+    .px-sm-50 {
+        padding-top: 40px;
+    }
+
+    .social li a {
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
+    }
+
+    #jarkalender {
+        padding-bottom: 0px;
+    }
+
+    #jarkalender h2 {
+        font-size: 35px;
+    }
+
+    .jarkalender-item {
+        margin-bottom: 30px;
+    }
+
+    #brand {
+        padding: 70px 0;
+    }
+
+    #brand h2 {
+        font-size: 35px;
+        padding-bottom: 30px;
+    }
+
+    .footer-logo {
+        border-left: 0;
+        padding-left: 0;
+    }
+
+    .footer-middle {
+        margin: 50px 0;
+    }
+
+    .footer-right {
+        padding-bottom: 40px;
+    }
+
+    .footer-right h5 {
+        position: relative;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #blog h2 {
+        font-size: 30px;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .sidebar h2 {
+        font-size: 28px !important;
+    }
+
+    .left-sidebar-inner ul li a {
+        font-family: ork-regular;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .left-sidebar-inner ul {
+        margin-bottom: 20px;
+    }
+
+    #team #blog h2 {
+        padding-top: 20px;
+    }
+
+    .mb-30 {
+        margin-bottom: 0 !important;
+    }
+
+    .team-item h3 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .blog-details h4 {
+        font-size: 22px;
+    }
+
+    .blog-details p {
+        padding-top: 0px;
+    }
+
+    .sponsor-tag li {
+        border-right: 0;
+    }
+
+    #blog .search-bar {
+        margin: 0;
+    }
+
+    .blog-list p {
+        padding-bottom: 15px;
+    }
+
+    .person-info {
+        padding-bottom: 27px;
+    }
+
+    .person-info h3 {
+        padding-top: 30px;
+    }
+
+    .person-info ul {
+        padding-bottom: 15px;
+    }
+
+    .tags li {
+        font-size: 14px;
+        padding: 5px 15px;
+        margin-bottom: 15px;
+    }
+
+    .blog-list h6 {
+        padding-top: 20px;
+    }
+
+    #nieuws-details .blog-details p {
+        padding-top: 10px;
+    }
+
+    .sidebar-btn a {
+        padding: 5px 14px;
+    }
+
+}
+
+/* ============= Medium Devices Media End ============== */
+
+/* ============= Large Devices Media Start ============== */
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 14px;
+        margin: 0 0px;
+    }
+
+    .navbar-brand img {
+        width: 90px;
+        position: absolute;
+        top: -46px;
+        left: -9px;
+    }
+
+    .sticky.navbar .navbar-brand img {
+        width: 90px;
+        position: absolute;
+        top: -35px;
+        left: -15px;
+    }
+
+    .search-bar {
+        width: 190px;
+    }
+
+    .search-bar .form-control {
+        width: 100%;
+    }
+
+    .search-bar input::placeholder {
+        font-size: 14px;
+    }
+
+    .search-bar button img {
+        width: 16px;
+    }
+
+}
+
+/* ============= Large Devices Media End ============== */

@@ -1,0 +1,1589 @@
+/* ============ COMMON CSS START ============ */
+
+* {
+    margin:0;
+    padding:0;
+    outline:0;
+}
+
+a,a:hover {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin-bottom: 0;
+}
+
+ul,ol {
+    list-style: none;
+    margin-bottom:0;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.form-control:focus {
+    outline:0;
+    box-shadow: none;
+    border:0;
+}
+
+button:focus {
+    outline:0;
+    box-shadow: none;
+    border:0;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    src:url(../fonts/Orkney\ Bold.ttf);
+    font-family:ork-bold;
+}
+
+@font-face {
+    src:url(../fonts/Orkney\ Medium.ttf);
+    font-family:ork-medium;
+}
+
+@font-face {
+    src:url(../fonts/Orkney\ Regular.ttf);
+    font-family:ork-regular;
+}
+
+@font-face {
+    src:url(../fonts/Orkney\ Light.ttf);
+    font-family:ork-Light;
+}
+
+@font-face {
+    src:url(../fonts/Pe-icon-7-stroke.ttf);
+    font-family:pe-icon;
+}
+
+/* ============ COMMON CSS END ============ */
+
+/* ================== PRELOADER PART CSS STRT ================== */
+
+.holder {
+    position: fixed;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fdfdfd;
+    z-index: 99999;
+  }
+  
+  .preloader {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: rotatePreloader 2s infinite ease-in;
+  }
+  
+  @keyframes rotatePreloader {
+    0% {
+      transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotateZ(-360deg);
+    }
+  }
+  .preloader div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  
+  .preloader div:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    width: 10%;
+    height: 10%;
+    background-color: #003473;
+    transform: translateX(-50%);
+    border-radius: 50%;
+  }
+  
+  .preloader div:nth-child(1) {
+    transform: rotateZ(0deg);
+    animation: rotateCircle1 2s infinite linear;
+    z-index: 9;
+  }
+  
+  @keyframes rotateCircle1 {
+    0% {
+      opacity: 0;
+    }
+    0% {
+      opacity: 1;
+      transform: rotateZ(36deg);
+    }
+    7% {
+      transform: rotateZ(0deg);
+    }
+    57% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(-324deg);
+      opacity: 1;
+    }
+  }
+  .preloader div:nth-child(2) {
+    transform: rotateZ(36deg);
+    animation: rotateCircle2 2s infinite linear;
+    z-index: 8;
+  }
+  
+  @keyframes rotateCircle2 {
+    5% {
+      opacity: 0;
+    }
+    5.0001% {
+      opacity: 1;
+      transform: rotateZ(0deg);
+    }
+    12% {
+      transform: rotateZ(-36deg);
+    }
+    62% {
+      transform: rotateZ(-36deg);
+    }
+    100% {
+      transform: rotateZ(-324deg);
+      opacity: 1;
+    }
+  }
+  .preloader div:nth-child(3) {
+    transform: rotateZ(72deg);
+    animation: rotateCircle3 2s infinite linear;
+    z-index: 7;
+  }
+  
+  @keyframes rotateCircle3 {
+    10% {
+      opacity: 0;
+    }
+    10.0002% {
+      opacity: 1;
+      transform: rotateZ(-36deg);
+    }
+    17% {
+      transform: rotateZ(-72deg);
+    }
+    67% {
+      transform: rotateZ(-72deg);
+    }
+    100% {
+      transform: rotateZ(-324deg);
+      opacity: 1;
+    }
+  }
+  .preloader div:nth-child(4) {
+    transform: rotateZ(108deg);
+    animation: rotateCircle4 2s infinite linear;
+    z-index: 6;
+  }
+  
+  @keyframes rotateCircle4 {
+    15% {
+      opacity: 0;
+    }
+    15.0003% {
+      opacity: 1;
+      transform: rotateZ(-72deg);
+    }
+    22% {
+      transform: rotateZ(-108deg);
+    }
+    72% {
+      transform: rotateZ(-108deg);
+    }
+    100% {
+      transform: rotateZ(-324deg);
+      opacity: 1;
+    }
+  }
+  .preloader div:nth-child(5) {
+    transform: rotateZ(144deg);
+    animation: rotateCircle5 2s infinite linear;
+    z-index: 5;
+  }
+  
+  @keyframes rotateCircle5 {
+    20% {
+      opacity: 0;
+    }
+    20.0004% {
+      opacity: 1;
+      transform: rotateZ(-108deg);
+    }
+    27% {
+      transform: rotateZ(-144deg);
+    }
+    77% {
+      transform: rotateZ(-144deg);
+    }
+    100% {
+      transform: rotateZ(-324deg);
+      opacity: 1;
+    }
+  }
+  .preloader div:nth-child(6) {
+    transform: rotateZ(180deg);
+    animation: rotateCircle6 2s infinite linear;
+    z-index: 4;
+  }
+  
+  @keyframes rotateCircle6 {
+    25% {
+      opacity: 0;
+    }
+    25.0005% {
+      opacity: 1;
+      transform: rotateZ(-144deg);
+    }
+    32% {
+      transform: rotateZ(-180deg);
+    }
+    82% {
+      transform: rotateZ(-180deg);
+    }
+    100% {
+      transform: rotateZ(-324deg);
+      opacity: 1;
+    }
+  }
+  .preloader div:nth-child(7) {
+    transform: rotateZ(216deg);
+    animation: rotateCircle7 2s infinite linear;
+    z-index: 3;
+  }
+  
+  @keyframes rotateCircle7 {
+    30% {
+      opacity: 0;
+    }
+    30.0006% {
+      opacity: 1;
+      transform: rotateZ(-180deg);
+    }
+    37% {
+      transform: rotateZ(-216deg);
+    }
+    87% {
+      transform: rotateZ(-216deg);
+    }
+    100% {
+      transform: rotateZ(-324deg);
+      opacity: 1;
+    }
+  }
+  .preloader div:nth-child(8) {
+    transform: rotateZ(252deg);
+    animation: rotateCircle8 2s infinite linear;
+    z-index: 2;
+  }
+  
+  @keyframes rotateCircle8 {
+    35% {
+      opacity: 0;
+    }
+    35.0007% {
+      opacity: 1;
+      transform: rotateZ(-216deg);
+    }
+    42% {
+      transform: rotateZ(-252deg);
+    }
+    92% {
+      transform: rotateZ(-252deg);
+    }
+    100% {
+      transform: rotateZ(-324deg);
+      opacity: 1;
+    }
+  }
+  .preloader div:nth-child(9) {
+    transform: rotateZ(288deg);
+    animation: rotateCircle9 2s infinite linear;
+    z-index: 1;
+  }
+  
+  @keyframes rotateCircle9 {
+    40% {
+      opacity: 0;
+    }
+    40.0008% {
+      opacity: 1;
+      transform: rotateZ(-252deg);
+    }
+    47% {
+      transform: rotateZ(-288deg);
+    }
+    97% {
+      transform: rotateZ(-288deg);
+    }
+    100% {
+      transform: rotateZ(-324deg);
+      opacity: 1;
+    }
+  }
+  .preloader div:nth-child(10) {
+    transform: rotateZ(324deg);
+    animation: rotateCircle10 2s infinite linear;
+    z-index: 0;
+  }
+  
+  @keyframes rotateCircle10 {
+    45% {
+      opacity: 0;
+    }
+    45.0009% {
+      opacity: 1;
+      transform: rotateZ(-288deg);
+    }
+    52% {
+      transform: rotateZ(-324deg);
+    }
+    102% {
+      transform: rotateZ(-324deg);
+    }
+    100% {
+      transform: rotateZ(-324deg);
+      opacity: 1;
+    }
+  }
+
+/* ================== PRELOADER PART CSS END ================== */
+
+/* ============ HEADER PART CSS START ============ */
+
+header {
+    background:url(../images/header-bg.png) no-repeat center;
+    background-size:cover;
+    padding: 15px 0;
+}
+
+header p {
+    font-family:ork-regular;
+    font-size:16px;
+    color:#fff;
+}
+
+header p span {
+    font-family:ork-bold;
+}
+
+/* ============ HEADER PART CSS END ============ */
+
+/* ============ NAVBAR PART CSS START ============ */
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    top:55px;
+    left:0;
+    background: #fff;
+    padding: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.sticky.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    z-index: 999999;
+    background: #fff;
+    box-shadow: 0px 0px 8px 0px #ddd;
+}
+
+.navbar-brand {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-brand img {
+	width: 100px;
+	position: absolute;
+	top: -50px;
+	left: -30px;
+}
+
+.sticky.navbar .navbar-brand img {
+	width: 95px;
+	position: absolute;
+	top: -40px;
+	left: -30px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-family: ork-medium;
+    font-size:18px;
+    color:#888888;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color:#003473;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color:#003473;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link i {
+    font-size: 14px;
+    vertical-align: middle;
+    padding-left:5px;
+}
+
+.navbar-nav li {
+    position: relative;
+    padding: 20px 0;
+}
+
+.navbar-nav li ul {
+    position: absolute;
+    width: 200px;
+    top: 115.5%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0px 2px 5px 0px #ddd;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9999;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.navbar-nav li:hover > ul {
+    top: 100.5%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar-nav li ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.navbar-nav li ul li:last-child {
+    border-bottom: 0;
+}
+
+.navbar-nav li ul li a {
+    font-family: ork-medium;
+    font-size:18px;
+    color:#888888;
+    padding-left: 15px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.navbar-nav li ul li a:hover {
+    color:#003473;
+}
+
+.search-bar {
+    position:relative;
+    width:100%;
+}
+
+.search-bar .form-control {
+    border:0;
+    border-bottom: 1px solid #003473;
+    border-radius:0;
+    font-family:ork-regular;
+    font-size:18px;
+    color:#003473;
+    background:none;
+}
+
+.search-bar input::placeholder {
+    font-family:ork-regular;
+    font-size:18px;
+    color:#003473;
+}
+
+.search-bar button {
+    position: absolute;
+    top:50%;
+    right:0;
+    transform:translateY(-50%);
+    padding:0;
+    background:none;
+    border:0;
+    cursor:pointer;
+}
+
+.search-bar button img {
+    width:20px;
+}
+
+/* ============ NAVBAR PART CSS END ============ */
+
+/* ============ BANNER PART CSS START ============ */
+
+#banner {
+    background:url(../images/banner-bg.jpg) no-repeat center;
+    background-size:cover;
+    padding-top:230px;
+    padding-bottom:100px;
+}
+
+.banner-slide-main {
+    position: relative;
+}
+
+.bslide-item {
+    position: relative;
+}
+
+.bslide-overlay {
+    position: absolute;
+    width:100%;
+    height:100%;
+    background:rgb(0, 0, 0, .35);
+    top:0;
+    left:0;
+}
+
+.boverlay-text {
+    position: absolute;
+    width:100%;
+    bottom:10px;
+    left:50%;
+    transform:translateX(-50%);
+    padding:35px;
+    box-sizing:border-box;
+}
+
+.boverlay-text h2 {
+    font-family:ork-bold;
+    font-size:40px;
+    color:#fff;
+    padding-bottom: 35px;
+}
+
+.boverlay-text a {
+    font-family:ork-regular;
+    font-size:18px;
+    color:#221F1D;
+    background:#fff;
+    padding: 10px 30px;
+    border-radius:30px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.boverlay-text a:hover {
+    color:#fff;
+    background:#221F1D;
+}
+
+.boverlay-text a i {
+    font-size:14px;
+    vertical-align: middle;
+    padding-left:5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.boverlay-text a:hover i {
+    padding-left: 15px;
+}
+
+.left, .right {
+    font-size:16px;
+    color:#003473;
+    width:35px;
+    height:35px;
+    line-height:35px;
+    background:rgba(255, 255, 255, 0.5);
+    display:block;
+    text-align:center;
+    cursor:pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.left:hover, .right:hover {
+    color:#fff;
+    background:#003473;
+}
+
+.left {
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:0;
+    z-index: 9999;
+}
+
+.right {
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:0;
+    z-index: 9999;
+}
+
+#banner .slick-dots {
+    position: absolute;
+    bottom:0px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#banner .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#banner .slick-dots li button {
+    width: 10px;
+    height:10px;
+    border:0;
+    border-radius:50%;
+    background:#C6C6C6;
+    color:transparent;
+    cursor:pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+#banner .slick-dots li.slick-active button {
+    background:#221F1D;
+}
+
+.grid-item {
+    position:relative;
+}
+
+.bgrid-overlay {
+    position: absolute;
+    width:100%;
+    height:100%;
+    background:rgb(0, 0, 0, .3);
+    top:0;
+    left:0;
+}
+
+.bgrid-text {
+    position: absolute;
+    width:100%;
+    bottom:10px;
+    left:50%;
+    transform:translateX(-50%);
+    padding:25px;
+    box-sizing:border-box; 
+}
+
+.bgrid-text h3 {
+    font-family:ork-bold;
+    font-size:24px;
+    color:#fff;
+}
+
+.bgrid-text a {
+    font-family:ork-regular;
+    font-size:18px;
+    color:#fff;
+}
+
+.bgrid-text a i {
+    font-size:14px;
+    vertical-align: middle;
+    padding-left:5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.bgrid-text a:hover i {
+    padding-left: 15px;
+}
+
+.banner-bottom {
+    padding-top:20px;
+}
+
+.banner-bottom a img {
+    width:20px;
+    padding-right:5px;
+}
+
+.banner-bottom a {
+    font-family:ork-regular;
+    font-size: 18px;
+    color:#fff;
+}
+
+.banner-bottom a i {
+    font-size:14px;
+    color:#F1CD4C;
+    vertical-align: middle;
+    padding-left:5px;
+}
+
+.social {
+    position: fixed;
+    top:35%;
+    right:0;
+    z-index: 9999;
+}
+
+.social li {
+    margin-bottom: 5px;
+}
+
+.social li:last-child {
+    margin-bottom: 0;
+}
+
+.social li a {
+    width:50px;
+    height:50px;
+    line-height:50px;
+    background:#F1CD4C;
+    display:block;
+    text-align:center;
+}
+
+/* ============ BANNER PART CSS END ============ */
+
+/* ============ THIN SLIDER PART CSS START ============ */
+
+#thin-slider {
+    padding-top:10px;
+    position:relative;
+}
+
+.thin-left-one {
+    position: relative;
+}
+
+.thin-left-one:before {
+    position:absolute;
+    content:'';
+    width: 2px;
+    height: 85%;
+    background:#003473;
+    top:5px;
+    right: -5px;
+}
+
+.thin-left-one ul li {
+    display:inline-block;
+    font-family: ork-bold;
+    font-size:18px;
+    color:#003473;
+}
+
+.thin-left-one ul li:first-child {
+    font-family:ork-regular;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-right:11px;
+    position: relative;
+}
+
+.thin-left-one ul li:first-child:before {
+    position:absolute;
+    content:"";
+    width:2px;
+    height:70%;
+    top:1px;
+    right:-7px;
+    background:#003473;
+}
+
+.thin-left-one p {
+    font-family:ork-regular;
+    font-size: 16px;
+    color:#221F1D;
+}
+
+.thin-left-two span {
+    font-family:ork-bold;
+    font-size: 16px;
+    color:#003473;
+}
+
+.thin-left-two img {
+    width:45px;
+    padding-left:5px;
+}
+
+.thin-right span {
+    font-family:ork-bold;
+    font-size: 16px;
+    color:#003473;
+}
+
+#thin-slider .slick-slide img {
+    display: inline-block;
+}
+
+.time {
+    font-family: ork-bold;
+    font-size: 30px;
+    color: #003473;
+}
+
+.left2, .right2 {
+    font-family:pe-icon;
+    font-size: 60px;
+    font-weight: 500;
+    color:#003473;
+    cursor:pointer;
+}
+
+.left2 {
+    position:absolute;
+    top:50%;
+    left:30px;
+    transform:translateY(-50%);
+}
+
+.right2 {
+    position:absolute;
+    top:50%;
+    right:30px;
+    transform:translateY(-50%);
+}
+
+/* ============ THIN SLIDER PART CSS END ============ */
+
+/* ============ JARKALENDER PART CSS START ============ */
+
+#jarkalender {
+    background:url(../images/jarkalender-bg.jpg) no-repeat center;
+    background-size:cover;
+    padding: 80px 0;
+}
+
+#jarkalender h2 {
+    font-family:ork-bold;
+    font-size: 40px;
+    color:#fff;
+    padding-bottom:30px;
+}
+
+.jarkalender-item-text {
+    background:#fff;
+    padding: 20px;
+    box-sizing:border-box;
+}
+
+.jarkalender-item-text h4 {
+    font-family:ork-bold;
+    font-size:24px;
+    color:#003473;
+    padding-bottom:15px;
+}
+
+.jarkalender-item-text p {
+    font-family:ork-regular;
+    font-size:18px;
+    color:#221F1D;
+    position:relative;
+    padding-left:10px;
+    line-height: 20px;
+    margin-bottom:20px;
+}
+
+.jarkalender-item-text p:before {
+    position:absolute;
+    content:'';
+    width: 1px;
+    height:90%;
+    top:0;
+    left:0;
+    background:#F1CD4C;
+}
+
+.jarkalender-item-text a {
+    font-family:ork-regular;
+    font-size:18px;
+    color:#003473;
+    display:block;
+    text-align:right;
+}
+
+.jarkalender-item-text a i {
+    font-size: 14px;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+/* ============ JARKALENDER PART CSS END ============ */
+
+/* ============ BRAND PART CSS START ============ */
+
+#brand {
+    padding: 100px 0;
+}
+
+#brand h2 {
+    font-family:ork-bold;
+    font-size: 40px;
+    color:#003473;
+    padding-bottom:20px;
+}
+
+.brand-item {
+    background: #fff;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 0px #ddd;
+    border-radius:5px;
+    margin: 10px 0;
+}
+
+.brand-btn {
+    margin-top:50px;
+}
+
+.brand-btn a {
+    font-family:ork-regular;
+    font-size:18px;
+    color:#221F1D;
+    padding: 10px 30px;
+    border: 1px solid #F1CD4C;
+    border-radius:30px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.brand-btn a:hover {
+    background: #F1CD4C;
+    color: #fff;
+}
+
+.brand-btn a i {
+    font-size: 14px;
+    vertical-align:middle;
+    color:#F1CD4C;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.brand-btn a:hover i {
+    color: #fff;
+    padding-left: 15px;
+}
+
+.brand-slide-main {
+    position: relative;
+}
+
+.left3, .right3 {
+    font-family:pe-icon;
+    font-size: 60px;
+    font-weight: 500;
+    color:#F1CD4C;
+    cursor:pointer;
+}
+
+.left3 {
+    position:absolute;
+    top:50%;
+    left:-70px;
+    transform:translateY(-50%);
+}
+
+.right3 {
+    position:absolute;
+    top:50%;
+    right:-70px;
+    transform:translateY(-50%);
+}
+
+/* ============ BRAND PART CSS END ============ */
+
+/* ============ FOOTER PART CSS START ============ */
+
+footer {
+    background:url(../images/footer-bg.jpg) no-repeat center;
+    background-size:cover;
+    padding-top:60px;
+    padding-bottom: 20px;
+}
+
+.footer-logo {
+    border-left: 2px solid #F1CD4C;
+    padding-left: 15px;
+}
+
+.footer-left h6 {
+    font-family:ork-bold;
+    font-size:24px;
+    color:#fff;
+    padding-bottom:10px;
+}
+
+.footer-left ul li {
+    font-family: ork-regular;
+    font-size:16px;
+    color: #fff;
+}
+
+.footer-left ul li a {
+    color: #fff;
+}
+
+.footer-right {
+    position: relative;
+}
+
+.footer-right h5 {
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    font-family:ork-bold;
+    font-size: 24px;
+    color:#fff;
+}
+
+.footer-right h5 a i {
+    font-size: 22px;
+    color: #fff;
+    padding: 0 5px;
+}
+
+/* ============ FOOTER PART CSS END ============ */
+
+/* ============ COPYRIGHT PART CSS START ============ */
+
+#cpryt {
+    background:url(../images/header-bg.png) no-repeat center;
+    background-size:cover;
+    padding: 15px 0;
+}
+
+#cpryt p {
+    font-family:ork-regular;
+    font-size:16px;
+    color:#fff;
+}
+
+#cpryt p span {
+    font-family:ork-bold;
+}
+
+/* ============ COPYRIGHT PART CSS END ============ */
+
+/* ============ BREADCUMB PART CSS START ============ */
+
+#breadcumb {
+    background:url(../images/banner-bg.jpg) no-repeat center;
+    background-size:cover;
+    padding: 100px 0;
+    padding-top: 190px;
+}
+
+/* ============ BREADCUMB PART CSS END ============ */
+
+/* ============ BLOG LIST PAGE CSS START ============ */
+
+#blog {
+    margin-top: -120px;
+}
+
+#blog h2 {
+    font-family: ork-bold;
+    font-size: 40px;
+    color:#003473;
+    padding-bottom: 20px;
+}
+
+.box {
+    padding: 30px;
+    box-sizing:border-box;
+    box-shadow: 0px 0px 10px 0px #eee;
+    background:#fff;
+}
+
+.tags li {
+    display:inline-block;
+    margin-right:10px;
+}
+
+.tags li a {
+    font-family:ork-regular;
+    font-size: 18px;
+    padding: 5px 25px;
+    border-radius: 30px;
+    border: 1px solid #C7C6C6;
+    color:#221F1D;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tags li a:hover {
+    background:#F1CD4C;
+    color:#fff;
+    border:0;
+    border: 1px solid #F1CD4C;
+}
+
+.tags li:last-child {
+    margin-right:0;
+}
+
+.blog-list {
+    padding: 30px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.blog-list h6 {
+    font-family: ork-bold;
+    font-size: 18px;
+    color:#707070;
+    padding-top:5px;
+    padding-bottom: 8px;
+}
+
+.blog-list span {
+    font-family: ork-bold;
+    font-size:18px;
+    color:#F1CD4C;
+}
+
+.blog-list p {
+    font-family: ork-regular;
+    font-size: 16px;
+    color:#221F1D;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.blog-list a {
+    font-family: ork-regular;
+    font-size: 18px;
+    color:#003473;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.blog-list a i {
+    font-size: 14px;
+    vertical-align:middle;
+}
+
+.blog-list a:hover {
+    padding-left: 15px;
+}
+
+/* ============ BLOG LIST PAGE CSS END ============ */
+
+/* ============ BLOG DETAILS PAGE CSS START ============ */
+
+.blog-details h6 {
+    font-family:ork-regular;
+    font-size: 18px;
+    color:#221F1D;
+}
+
+.blog-details p {
+    font-family: ork-regular;
+    font-size: 16px;
+    color:#221F1D;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.blog-details h4 {
+    font-family:ork-bold;
+    font-size: 24px;
+    color: #003473;
+}
+
+.blog-bottom {
+    background: #3E78BE;
+    padding: 15px 30px;
+    box-sizing:border-box;
+}
+
+.blog-bottom a {
+    font-family: ork-regular;
+    font-size: 18px;
+    color:#fff;
+    padding:0;
+}
+
+.blog-bottom p {
+    font-family: ork-regular;
+    font-size: 18px;
+    color:#fff;
+    padding:0 !important;
+}
+
+.blog-bottom a i {
+    font-size: 14px;
+    vertical-align:middle;
+}
+
+.sidebar {
+    box-shadow: 0px 0px 5px 0px #eee;
+    background:#fff;
+}
+
+.sidebar-inner {
+    background: #E5E5E5;
+    padding: 20px;
+    box-sizing:border-box;
+}
+
+.sidebar h2 {
+    font-size: 35px !important;
+    padding-top:15px;
+}
+
+.person-sidebar h2 {
+    font-size: 33px !important;
+}
+
+.sidebar-item {
+    position: relative;
+}
+
+.sidebar-overlay {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgb(0, 0, 0, .3);
+}
+
+.sidebar-text {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    padding: 20px;
+    box-sizing:border-box;
+}
+
+.sidebar-text h5 {
+    font-family: ork-bold;
+    font-size: 20px;
+    color:#fff;
+    padding-bottom: 10px;
+}
+
+.sidebar-text a {
+    font-family:ork-regular;
+    font-size: 18px;
+    color: #fff;
+}
+
+.sidebar-text a i {
+    font-size: 12px;
+    vertical-align:middle;
+    padding-left: 5px;
+}
+
+.sidebar-btn {
+    text-align:center;
+    margin-top:20px;
+}
+
+.sidebar-btn a {
+    font-family: ork-regular;
+    font-size: 18px;
+    color: #221F1D;
+    background:#fff;
+    padding: 5px 20px;
+    border: 1px solid #F1CD4C;
+    border-radius:30px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.sidebar-btn a:hover {
+    background: #F1CD4C;
+    color: #fff;
+}
+
+.sidebar-btn a i {
+    font-size:14px;
+    vertical-align:middle;
+    color:#F1CD4C;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.sidebar-btn a:hover i {
+    color: #fff;
+}
+
+.fourth-page h2 {
+    padding-top:25px;
+}
+
+.sponsor-tag li {
+    font-family: ork-regular;
+    font-size: 18px;
+    color:#F1CD4C;
+    padding-right: 15px;
+    border-right: 1px solid #F1CD4C;
+}
+
+.sponsor h3 {
+    font-family:ork-bold;
+    font-size: 24px;
+    color:#003473;
+    padding-top: 5px;
+}
+
+
+/* ============ BLOG DETAILS PAGE CSS END ============ */
+
+/* ============ SPONSOR PERSON PAGE CSS START ============ */
+
+.person-brand {
+    padding: 30px;
+    box-sizing:border-box;
+    box-shadow: 0px 0px 15px 0px #eee;
+}
+
+.sponsor-details p {
+    font-family: ork-regular;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+.person-info h3 {
+    font-family: ork-bold;
+    font-size: 24px;
+    color:#003473;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.person-info ul {
+    padding-bottom: 30px;
+}
+
+.person-info ul li {
+    font-family:ork-regular;
+    font-size: 16px;
+    color:#221F1D;
+}
+
+.person-info a {
+    font-family: ork-regular;
+    font-size: 18px;
+    color:#221F1D;
+    padding: 5px 20px;
+    border-radius: 30px;
+    background: #F1CD4C;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.person-info a i {
+    font-size: 14px;
+    vertical-align:middle;
+    padding-left: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.person-info a:hover {
+    color: #F1CD4C;
+    background: #221F1D;
+}
+
+.person-info a:hover i {
+    padding-left: 15px;
+}
+
+.person-sidebar h3 {
+    font-family:ork-bold;
+    font-size: 24px;
+    color:#00326E;
+    text-align:center;
+    padding-top:20px;
+}
+
+.person-sidebar .sidebar-btn a i {
+    padding-left: 5px;
+}
+
+/* ============ SPONSOR PERSON PAGE CSS END ============ */
+
+/* ============ TEAM PAGE CSS START ============ */
+
+.left-sidebar-inner {
+    background: #003473;
+    padding: 20px;
+     box-sizing: border-box;
+}
+
+#team .sidebar h2 {
+    color: #fff;
+}
+
+.left-sidebar-inner ul {
+    margin-top: 25px;
+}
+
+.left-sidebar-inner ul li {
+    margin-top: 10px;
+}
+
+.left-sidebar-inner ul li a {
+    font-family: ork-regular;
+    font-size: 22px;
+    color: #fff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.left-sidebar-inner ul li a:hover {
+    color:#F1CD4C;
+    padding-left: 15px;
+}
+
+#team .jarkalender-item {
+    border-bottom: 2px solid #D2D2D1;
+}
+
+#team #blog h2 {
+    padding-bottom: 0;
+}
+
+.team-item h3 {
+    font-family: ork-regular;
+    font-size: 40px;
+    color:#F1CD4C;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* ============ TEAM PAGE CSS END ============ */
+
+/* ============ CONTACT PAGE CSS STRAT ============ */
+
+.contact-info {
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.contact-info h3 {
+    font-family: ork-bold;
+    font-size: 24px;
+    color: #003473;
+    padding-bottom: 5px;
+}
+
+.contact-info ul {
+    padding: 12px 0;
+}
+
+.contact-info ul li {
+    font-family: ork-regular;
+    font-size: 18px;
+    color: #003473;
+}
+
+.contact-info ul li h4 {
+    font-family: ork-bold;
+    font-size: 18px;
+    color: #F1CD4C;
+    padding-bottom: 3px;
+}
+
+.contact-info ul li a {
+    color: #003473;
+}
+
+/* ============ CONTACT PAGE CSS END ============ */
